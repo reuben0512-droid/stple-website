@@ -1,0 +1,142 @@
+/* stple — coming soon
+   Static production implementation of project/ui_kits/website/coming-soon.html
+   Tokens below are vendored from the stple design system (project/tokens/). */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&display=swap');
+
+:root {
+  --paper: #F5F3EF;
+  --ink-100: rgba(17, 17, 17, 1);
+  --ink-70:  rgba(17, 17, 17, 0.7);
+  --ink-60:  rgba(17, 17, 17, 0.6);
+  --ink-50:  rgba(17, 17, 17, 0.5);
+  --ink-20:  rgba(17, 17, 17, 0.2);
+  --ink-08:  rgba(17, 17, 17, 0.08);
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --radius-pill: 999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--paper);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* minimal top bar — wordmark only, nothing to navigate to yet */
+.site-header {
+  display: flex;
+  justify-content: center;
+  padding: 28px 40px;
+}
+
+.wordmark {
+  height: 22px;
+  width: auto;
+}
+
+/* hero / holding content */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 64px 40px;
+}
+
+.hero-inner {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  background: transparent;
+  color: var(--ink-70);
+  border: 1px solid var(--ink-20);
+}
+
+.headline {
+  font-weight: 900;
+  font-size: 76px;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  color: var(--ink-100);
+  margin: 28px 0 0;
+}
+
+.divider {
+  width: 32px;
+  height: 1px;
+  background: var(--ink-20);
+  margin: 36px auto;
+  flex-shrink: 0;
+}
+
+.lede {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink-60);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.lede + .lede {
+  margin-top: 16px;
+}
+
+/* quiet footer */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  border-top: 1px solid var(--ink-08);
+}
+
+.footer-meta {
+  font-size: 12px;
+  color: var(--ink-50);
+}
+
+@media (max-width: 640px) {
+  .headline {
+    font-size: 44px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
