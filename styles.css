@@ -38,7 +38,6 @@ body {
   flex-direction: column;
 }
 
-/* minimal top bar — wordmark only, nothing to navigate to yet */
 .site-header {
   display: flex;
   justify-content: center;
@@ -50,7 +49,6 @@ body {
   width: auto;
 }
 
-/* hero / holding content */
 .hero {
   flex: 1;
   display: flex;
@@ -115,7 +113,20 @@ body {
   margin-top: 16px;
 }
 
-/* quiet footer */
+.signup {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 360px;
+}
+
+.signup-label {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.01em;
+  color: var(--ink-70);
+  margin: 0 0 12px;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
