@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>stple — you're in</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <img class="wordmark" src="assets/stple-wordmark-dark.svg" alt="stple">
+    </header>
+
+    <main class="hero">
+      <div class="hero-inner">
+        <span class="status-tag">you're in</span>
+
+        <h1 class="headline">you're in.</h1>
+
+        <div class="divider" role="separator"></div>
+
+        <p class="lede">
+          keep an eye on your inbox — i'll be in touch soon with updates
+          on the formula, the ingredients, and when we're ready to launch.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-meta">© 2026 stple</span>
+      <span class="footer-meta">simple done properly · stple.co</span>
+    </footer>
+  </div>
+</body>
+</html>
