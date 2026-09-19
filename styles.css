@@ -116,7 +116,7 @@ body {
 .signup {
   margin-top: 40px;
   width: 100%;
-  max-width: 360px;
+  max-width: 480px;
 }
 
 .signup-label {
@@ -133,6 +133,10 @@ body {
   color: var(--ink-50);
 }
 
+/* Omnisend quiz form: stop it inheriting the hero's centred text so radio
+   options and wrapped lines sit left, matching the form builder preview. */
+.signup [id^="omnisend-embedded"] {
+  text-align: left;
 }
 
 .site-footer {
