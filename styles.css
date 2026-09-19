@@ -118,13 +118,6 @@ body {
   margin-top: 64px;
   width: 100%;
   max-width: 480px;
-  /* label + arrow sit on the same left edge as the form's text
-     (the Omnisend form has 20px side padding) */
-  text-align: left;
-  padding-left: 20px;
-}
-.signup [id^="omnisend-embedded"] {
-  margin-left: -20px;
 }
 
 .signup-label {
@@ -132,11 +125,11 @@ body {
   font-size: 18px;
   line-height: 1.6;
   color: var(--text-body);
-  margin: 0;
+  margin: 0 0 16px;
 }
 .signup-arrow {
   display: block;
-  margin-top: 8px;
+  margin-top: 12px;
   font-size: 16px;
   color: var(--ink-50);
 }
